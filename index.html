@@ -24,12 +24,24 @@
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
-      padding: 20px;
     }
 
     .container {
       max-width: 900px;
       margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* HERO BANNER */
+    .hero {
+      width: 100%;
+      height: 280px;
+      background-image: url('images/pink%20desk%20coffee%20paperclips%20pexels-jillyjillystudio-29765795.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 18px;
+      margin-bottom: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
     }
 
     h1 {
@@ -62,6 +74,13 @@
       color: var(--accent-dark);
     }
 
+    .card-img {
+      width: 100%;
+      border-radius: 14px;
+      margin-bottom: 16px;
+      display: block;
+    }
+
     .pill-list {
       display: flex;
       flex-wrap: wrap;
@@ -77,54 +96,58 @@
       font-size: 0.8rem;
     }
 
-    .highlight {
-      background: #fff2f8;
-      border-left: 4px solid var(--accent);
-      padding: 10px 12px;
-      border-radius: 10px;
-      font-size: 0.95rem;
-      margin-top: 0.5rem;
-    }
-
     .footer {
       text-align: center;
       font-size: 0.85rem;
       color: var(--muted);
       margin-top: 1.5rem;
+      padding-bottom: 20px;
     }
   </style>
 </head>
 
 <body>
+
+  <!-- HERO BANNER -->
+  <div class="hero"></div>
+
   <div class="container">
+
     <h1>💖 My Crafty Girl Studio</h1>
     <p class="subtitle">Cute projects, cozy vibes, and creative living.</p>
 
- <div class="card">
-  <img src="images/pink desk coffee paperclips pexels-jillyjillystudio-29765795.jpg" alt="Crafty desk" class="card-img">
+    <!-- INTRO CARD -->
+    <div class="card">
+      <img src="images/pink%20desk%20coffee%20paperclips%20pexels-jillyjillystudio-29765795.jpg" class="card-img" alt="Crafty desk aesthetic">
 
-  <p class="subtitle">
-    A soft, aesthetic space for DIY lovers, bead‑obsessed makers, and anyone who wants to add a little beauty to everyday life.
-  </p>
-  <p>Here you’ll find:</p>
-  <div class="pill-list">
-    <span class="pill">✨ Aesthetic craft tutorials</span>
-    <span class="pill">📚 Cozy blog posts</span>
-    <span class="pill">🎀 Behind‑the‑scenes projects</span>
-    <span class="pill">📘 eBook updates</span>
-  </div>
-</div>
+      <p class="subtitle">
+        A soft, aesthetic space for DIY lovers, bead‑obsessed makers, and anyone who wants to add a little beauty to everyday life.
+      </p>
+      <p>Here you’ll find:</p>
+      <div class="pill-list">
+        <span class="pill">✨ Aesthetic craft tutorials</span>
+        <span class="pill">📚 Cozy blog posts</span>
+        <span class="pill">🎀 Behind‑the‑scenes projects</span>
+        <span class="pill">📘 eBook updates</span>
+      </div>
+    </div>
+
+    <!-- BLOG CARD -->
+    <div class="card">
+      <img src="images/crafting%20supplies%20top%20down%20pexels-vikaemerson-6037947.jpg" class="card-img" alt="Craft supplies flatlay">
 
       <div class="section-title">🌸 Blog</div>
-       <div class="card">
-  <img src="images/crafting supplies top down pexels-vikaemerson-6037947.jpg" alt="Craft supplies" class="card-img">
-<ul>
-  <li><a href="blog/aesthetic-summer-party-ideas.html"><strong>Aesthetic Summer Party Ideas</strong></a></li>
-</ul>
-    </div>
+      <ul>
+        <li><strong>Aesthetic Summer Party Ideas</strong></li>
+        <li><strong>How to Organize Your Bead Stash</strong></li>
+        <li><strong>Color Theory for Crafty Girls</strong></li>
+      </ul>
     </div>
 
+    <!-- DIY CARD -->
     <div class="card">
+      <img src="images/apples%20harvest%20fall%20pexels-jillyjillystudio-34282667.jpg" class="card-img" alt="Cozy crafting scene">
+
       <div class="section-title">🎀 DIY Tutorials</div>
       <ul>
         <li><strong>Cascade Earrings Tutorial</strong></li>
@@ -133,7 +156,10 @@
       </ul>
     </div>
 
+    <!-- EBOOK CARD -->
     <div class="card">
+      <img src="images/pumpkins%20spread%20dark%20pexels-jillyjillystudio-34336342.jpg" class="card-img" alt="Aesthetic pumpkins">
+
       <div class="section-title">📘 My New eBook (Coming Soon!)</div>
       <p><strong>The Crafty Girl’s Guide to Aesthetic Living</strong></p>
       <ul>
@@ -145,7 +171,10 @@
       </ul>
     </div>
 
+    <!-- ABOUT CARD -->
     <div class="card">
+      <img src="images/beach%20chair%20jillyjillystudio.jpg" class="card-img" alt="Cozy beach chair aesthetic">
+
       <div class="section-title">🌼 About This Studio</div>
       <p>
         I'm a crafty girl, bead lover, and DIY enthusiast. I believe creativity should feel fun, productive, and inspirational. This site is my digital studio where I share lots of fun projects for free.
@@ -153,6 +182,7 @@
     </div>
 
     <p class="footer">Made with beads, coffee, and creative energy.</p>
+
   </div>
 </body>
 </html>
