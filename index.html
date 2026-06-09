@@ -2,18 +2,20 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Madison Martine</title>
+  <title>Mad Mar Life</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" href="images/favicon.png">
 
   <style>
     :root {
-      --bg: #fff9fb;
+      /* Refreshed color scheme: Warm, earthy, and clean */
+      --bg: #fdfaf6;
       --card: #ffffff;
-      --accent: #f3b7d4;
-      --accent-dark: #c46a9a;
-      --text: #333333;
-      --muted: #777777;
+      --accent: #d4a373;
+      --accent-dark: #8b5e3c;
+      --text: #4a4a4a;
+      --muted: #8d8d8d;
+      --pill-bg: #faedcd;
     }
 
     * {
@@ -22,7 +24,8 @@
 
     body {
       margin: 0;
-      font-family: "Segoe UI", system-ui, sans-serif;
+      /* Updated to a more editorial, modern serif/sans-serif mix */
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.7;
@@ -43,7 +46,7 @@
       background-position: center;
       border-radius: 18px;
       margin-bottom: 24px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.06);
     }
 
     @media (min-width: 600px) {
@@ -56,23 +59,24 @@
       text-align: center;
       color: var(--accent-dark);
       margin-bottom: 0.5rem;
-      font-size: 1.8rem;
+      font-size: 2rem;
+      letter-spacing: -0.5px;
     }
 
     .subtitle {
       text-align: center;
       color: var(--muted);
       margin-bottom: 1.8rem;
-      font-size: 1rem;
+      font-size: 1.1rem;
     }
 
     .card {
       background: var(--card);
       border-radius: 14px;
-      padding: 20px;
+      padding: 24px;
       margin-bottom: 24px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.04);
-      border: 1px solid rgba(244, 189, 214, 0.4);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+      border: 1px solid #f0ece2;
     }
 
     .section-title {
@@ -80,23 +84,18 @@
       align-items: center;
       gap: 8px;
       margin-bottom: 0.75rem;
-      font-size: 1.25rem;
+      font-size: 1.3rem;
       color: var(--accent-dark);
+      font-weight: 600;
     }
 
     .card-img {
       width: 100%;
       max-height: 220px;
       object-fit: cover;
-      border-radius: 14px;
+      border-radius: 10px;
       margin-bottom: 16px;
       display: block;
-    }
-
-    @media (min-width: 600px) {
-      .card-img {
-        max-height: 260px;
-      }
     }
 
     .pill-list {
@@ -107,18 +106,19 @@
     }
 
     .pill {
-      padding: 4px 10px;
-      border-radius: 999px;
-      background: #ffe4f1;
+      padding: 6px 14px;
+      border-radius: 6px;
+      background: var(--pill-bg);
       color: var(--accent-dark);
-      font-size: 0.8rem;
+      font-size: 0.85rem;
+      font-weight: 500;
     }
 
     .footer {
       text-align: center;
       font-size: 0.85rem;
       color: var(--muted);
-      margin-top: 1.5rem;
+      margin-top: 2rem;
       padding-bottom: 20px;
     }
   </style>
@@ -128,7 +128,7 @@
 
   <!-- LOGO -->
   <div style="text-align:center; margin-top:20px;">
-    <img src="logo.svg" alt="Madison Martine Logo" style="width:260px; max-width:80%;">
+    <img src="images/logo.png" alt="Mad Mar Life Logo" style="width:260px; max-width:80%;">
   </div>
 
   <!-- HERO BANNER -->
@@ -136,73 +136,60 @@
 
   <div class="container">
 
-    <h1>💖 Madison Martine</h1>
-    <p class="subtitle">Cute projects, cozy vibes, and creative living.</p>
+    <h1>Mad Mar Life</h1>
+    <p class="subtitle">Curating beauty, craft, and intentional living.</p>
 
-    <!-- INTRO CARD (NO IMAGE) -->
+    <!-- INTRO CARD -->
     <div class="card">
       <p class="subtitle">
-        A soft, aesthetic space for DIY lovers, bead‑obsessed makers, and anyone who wants to add a little beauty to everyday life.
+        A space for makers, stewards of the home, and those building a life of intention.
       </p>
-      <p>Here you’ll find:</p>
       <div class="pill-list">
-        <span class="pill">✨ Aesthetic craft tutorials</span>
-        <span class="pill">📚 Cozy blog posts</span>
-        <span class="pill">🎀 Behind‑the‑scenes projects</span>
-        <span class="pill">📘 eBook updates</span>
+        <span class="pill">✨ DIY Tutorials</span>
+        <span class="pill">📚 Cozy Perspectives</span>
+        <span class="pill">🎀 Creative Projects</span>
+        <span class="pill">📘 Updates</span>
       </div>
     </div>
 
     <!-- BLOG CARD -->
     <div class="card">
       <img src="/images/crafting-supplies-top-down.jpg" class="card-img" alt="Craft supplies flatlay">
-
       <div class="section-title">🌸 Blog</div>
       <ul>
-        <li><strong>Aesthetic Summer Party Ideas</strong></li>
-        <li><strong>How to Organize Your Bead Stash</strong></li>
-        <li><strong>Color Theory for Crafty Girls</strong></li>
+        <li><strong>Intentional Living Ideas</strong></li>
+        <li><strong>Organizing Your Space</strong></li>
+        <li><strong>Creative Theory</strong></li>
       </ul>
     </div>
 
     <!-- DIY CARD -->
     <div class="card">
       <img src="images/apples-harvest-fall.jpg" class="card-img" alt="Cozy crafting scene">
-
-      <div class="section-title">🎀 DIY Tutorials</div>
+      <div class="section-title">🎀 DIY Projects</div>
       <ul>
-        <li><strong>Cascade Earrings Tutorial</strong></li>
-        <li><strong>Pinterest‑Style Fall Pumpkins</strong></li>
-        <li><strong>Beaded Keychain Charms</strong></li>
+        <li><strong>Studio Tutorials</strong></li>
+        <li><strong>Seasonal Decor</strong></li>
+        <li><strong>Handmade Charms</strong></li>
       </ul>
     </div>
 
     <!-- EBOOK CARD -->
     <div class="card">
       <img src="images/pumpkins-dark.jpg" class="card-img" alt="Aesthetic pumpkins">
-
       <div class="section-title">📘 My New eBook (Coming Soon!)</div>
-      <p><strong>The Crafty Girl’s Guide to Aesthetic Living</strong></p>
-      <ul>
-        <li>Beginner‑friendly DIY projects</li>
-        <li>Beadwork patterns</li>
-        <li>Color palettes</li>
-        <li>Home‑crafting tips</li>
-        <li>Seasonal inspiration</li>
-      </ul>
+      <p><strong>The Mad Mar Guide to Aesthetic Living</strong></p>
     </div>
 
     <!-- ABOUT CARD -->
     <div class="card">
-      <img src="/images/beach-chair.jpg" class="card-img" alt="Cozy beach chair aesthetic">
-
       <div class="section-title">🌼 About This Studio</div>
       <p>
-        I'm a crafty girl, bead lover, and DIY enthusiast. I believe creativity should feel fun, productive, and inspirational. This site is my digital studio where I share lots of fun projects for free.
+        I'm a creator and enthusiast of slow, purposeful living. This site is my digital studio where I share projects, thoughts on stewardship, and inspiration for your own creative journey.
       </p>
     </div>
 
-    <p class="footer">Made with beads, coffee, and creative energy.</p>
+    <p class="footer">Mad Mar Life &copy; 2026</p>
 
   </div>
 </body>
